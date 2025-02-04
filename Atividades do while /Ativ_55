@@ -1,0 +1,19 @@
+public class Ativ_55 {
+    public static void main(String[] args) {
+        int linha = 1;
+        
+        do {
+            int num = 1;
+            int col = 1;
+            
+            do {
+                System.out.print(num + " ");
+                num++;
+                col++;
+            } while (col <= linha);
+            
+            System.out.println();
+            linha++;
+        } while (linha <= 5);
+    }
+}
