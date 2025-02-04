@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Ativ_47 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int numero, i = 2;
+        boolean primo = true;
+
+        System.out.print("Digite um número: ");
+        numero = scanner.nextInt();
+
+        if (numero <= 1) {
+            primo = false;
+        } else {
+            do {
+                if (numero % i == 0) {
+                    primo = false;
+                    break;
+                }
+                i++;
+            } while (i <= Math.sqrt(numero));
+        }
+
+        if (primo) {
+            System.out.println(numero + " é primo.");
+        } else {
+            System.out.println(numero + " não é primo.");
+        }
+    }
+}
