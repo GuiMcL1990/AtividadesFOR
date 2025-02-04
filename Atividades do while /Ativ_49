@@ -1,0 +1,20 @@
+import java.util.Random;
+
+public class Ativ-49 {
+    public static void main(String[] args) {
+        Random random = new Random();
+        String caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        StringBuilder senha = new StringBuilder();
+        int tamanho = 6;
+        
+        do {
+            senha.setLength(0);
+            for (int i = 0; i < tamanho; i++) {
+                int indice = random.nextInt(caracteres.length());
+                senha.append(caracteres.charAt(indice));
+            }
+        } while (senha.length() != tamanho);
+
+        System.out.println("Senha gerada: " + senha.toString());
+    }
+}
