@@ -1,0 +1,12 @@
+public class Ativ_53 {
+    public static void main(String[] args) {
+        int count = 1;
+        int numeroTriangular = 0;
+        
+        do {
+            numeroTriangular += count;
+            System.out.println(numeroTriangular);
+            count++;
+        } while (count <= 10);
+    }
+}
