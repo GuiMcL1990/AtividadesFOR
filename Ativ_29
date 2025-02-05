@@ -13,7 +13,7 @@ public class OrdenacaoSelecao {
             vetor[indiceMenor] = temp;
         }
         
-        // Exibe o vetor ordenado
+      
         for (int num : vetor) {
             System.out.print(num + " ");
         }
